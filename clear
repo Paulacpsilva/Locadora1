@@ -1,0 +1,365 @@
+[33mcommit a77db0cc3d89c882ce701a49fb50451be43ad5a0[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Paula <paulacpsilva@live.com>
+Date:   Wed Feb 10 01:40:35 2021 -0300
+
+    Teste de commit alterando o arquivo
+
+[1mdiff --git a/.classpath b/.classpath[m
+[1mnew file mode 100644[m
+[1mindex 0000000..d54800d[m
+[1m--- /dev/null[m
+[1m+++ b/.classpath[m
+[36m@@ -0,0 +1,10 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<classpath>[m
+[32m+[m	[32m<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11">[m
+[32m+[m		[32m<attributes>[m
+[32m+[m			[32m<attribute name="module" value="true"/>[m
+[32m+[m		[32m</attributes>[m
+[32m+[m	[32m</classpathentry>[m
+[32m+[m	[32m<classpathentry kind="src" path="src"/>[m
+[32m+[m	[32m<classpathentry kind="output" path="bin"/>[m
+[32m+[m[32m</classpath>[m
+[1mdiff --git a/.project b/.project[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b7fda74[m
+[1m--- /dev/null[m
+[1m+++ b/.project[m
+[36m@@ -0,0 +1,17 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<projectDescription>[m
+[32m+[m	[32m<name>Locadora</name>[m
+[32m+[m	[32m<comment></comment>[m
+[32m+[m	[32m<projects>[m
+[32m+[m	[32m</projects>[m
+[32m+[m	[32m<buildSpec>[m
+[32m+[m		[32m<buildCommand>[m
+[32m+[m			[32m<name>org.eclipse.jdt.core.javabuilder</name>[m
+[32m+[m			[32m<arguments>[m
+[32m+[m			[32m</arguments>[m
+[32m+[m		[32m</buildCommand>[m
+[32m+[m	[32m</buildSpec>[m
+[32m+[m	[32m<natures>[m
+[32m+[m		[32m<nature>org.eclipse.jdt.core.javanature</nature>[m
+[32m+[m	[32m</natures>[m
+[32m+[m[32m</projectDescription>[m
+[1mdiff --git a/.settings/org.eclipse.jdt.core.prefs b/.settings/org.eclipse.jdt.core.prefs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..1999752[m
+[1m--- /dev/null[m
+[1m+++ b/.settings/org.eclipse.jdt.core.prefs[m
+[36m@@ -0,0 +1,15 @@[m
+[32m+[m[32meclipse.preferences.version=1[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.codegen.inlineJsrBytecode=enabled[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.codegen.targetPlatform=11[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.codegen.unusedLocal=preserve[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.compliance=11[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.debug.lineNumber=generate[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.debug.localVariable=generate[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.debug.sourceFile=generate[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.problem.assertIdentifier=error[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.problem.enablePreviewFeatures=disabled[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.problem.enumIdentifier=error[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.problem.reportPreviewFeatures=warning[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.release=enabled[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.source=11[m
+[32m+[m[32morg.eclipse.objectteams.otdt.compiler.option.pure_java=enabled[m
+[1mdiff --git a/bin/br/com/locadora/filmes/Catalogo.class b/bin/br/com/locadora/filmes/Catalogo.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..2b600fe[m
+Binary files /dev/null and b/bin/br/com/locadora/filmes/Catalogo.class differ
+[1mdiff --git a/bin/br/com/locadora/filmes/TestaFilme.class b/bin/br/com/locadora/filmes/TestaFilme.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..bce30ae[m
+Binary files /dev/null and b/bin/br/com/locadora/filmes/TestaFilme.class differ
+[1mdiff --git a/bin/br/com/locadora/filmes/locadora/AlugarFilme.class b/bin/br/com/locadora/filmes/locadora/AlugarFilme.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..1018a2f[m
+Binary files /dev/null and b/bin/br/com/locadora/filmes/locadora/AlugarFilme.class differ
+[1mdiff --git a/bin/br/com/locadora/filmes/locadora/DevolverFilme.class b/bin/br/com/locadora/filmes/locadora/DevolverFilme.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e686377[m
+Binary files /dev/null and b/bin/br/com/locadora/filmes/locadora/DevolverFilme.class differ
+[1mdiff --git a/filmes.txt b/filmes.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..a88134b[m
+[1m--- /dev/null[m
+[1m+++ b/filmes.txt[m
+[36m@@ -0,0 +1,104 @@[m
+[32m+[m[32m﻿Frozen 2[m
+[32m+[m[32mSuperintelligence[m
+[32m+[m[32mQuem Me Ama Me Segue[m
+[32m+[m[32mAmeaça Profunda[m
+[32m+[m[32mAdoráveis Mulheres[m
+[32m+[m[32mRetrato de uma Jovem em Chamas[m
+[32m+[m[32mKursk  A Última Missão[m
+[32m+[m[32mJumanji: Próxima Fase[m
+[32m+[m[32mAntologia da cidade fantasma[m
+[32m+[m[32mO Escândalo[m
+[32m+[m[32mA Chance de Fahim[m
+[32m+[m[32mInstinto[m
+[32m+[m[32mOs Miseráveis[m
+[32m+[m[32mUm Espião Animal[m
+[32m+[m[32mAdoniran  Meu nome é João Rubinato[m
+[32m+[m[32mO Melhor Verão das Nossas Vidas[m
+[32m+[m[32m1917[m
+[32m+[m[32mUm Lindo Dia na Vizinhança[m
+[32m+[m[32mA Divisão[m
+[32m+[m[32mRun[m
+[32m+[m[32mA Possessão de Mary[m
+[32m+[m[32mBad Boys Para Sempre[m
+[32m+[m[32mAçúcar[m
+[32m+[m[32mOs Órfãos[m
+[32m+[m[32mCanta Pra Subir[m
+[32m+[m[32mCom Amor, Van Gogh  O Sonho Impossível[m
+[32m+[m[32mOs Órfãos[m
+[32m+[m[32mUma Vida Oculta[m
+[32m+[m[32mJudy  Muito Além do ArcoÍris[m
+[32m+[m[32mA Maldição do Espelho[m
+[32m+[m[32mQuem Me Ama, Me Segue![m
+[32m+[m[32mAves de Rapina  Arlequina e Sua Emancipação Fantabulosa[m
+[32m+[m[32mJojo Rabbit[m
+[32m+[m[32mAbe[m
+[32m+[m[32mHarriet[m
+[32m+[m[32mMilitary Wives[m
+[32m+[m[32mDilili em Paris[m
+[32m+[m[32mSonic  O Filme[m
+[32m+[m[32mO Grito[m
+[32m+[m[32mLittle Women[m
+[32m+[m[32mDepois A Louca Sou Eu[m
+[32m+[m[32mLuta Por Justiça[m
+[32m+[m[32mMaria e João: O Conto das Bruxas[m
+[32m+[m[32mDolittle[m
+[32m+[m[32mA Hora da Sua Morte[m
+[32m+[m[32mHonest Thief[m
+[32m+[m[32mO Chamado da Floresta[m
+[32m+[m[32mJust Mercy[m
+[32m+[m[32mJexi, um celular sem filtro[m
+[32m+[m[32mWendy[m
+[32m+[m[32mDois Irmãos  Uma Jornada Fantástica[m
+[32m+[m[32mBrahms – O Boneco do Mal 2[m
+[32m+[m[32mA Suspeita[m
+[32m+[m[32mSolteira Quase Surtando[m
+[32m+[m[32mDragonkeeper[m
+[32m+[m[32mQueen & Slim[m
+[32m+[m[32mSapatinho Vermelho e os Sete Anões[m
+[32m+[m[32mGodzila vs Kong[m
+[32m+[m[32mAprendiz de Espiã[m
+[32m+[m[32mAs primeiras férias não se esquece jamais![m
+[32m+[m[32mDe perto ela não é normal[m
+[32m+[m[32mO oficial e o espião[m
+[32m+[m[32mBloodshot[m
+[32m+[m[32mO Melhor Está Por Vir[m
+[32m+[m[32mO Homem Invisível[m
+[32m+[m[32mUm Lugar Silencioso 2[m
+[32m+[m[32mO Pulo do Gato[m
+[32m+[m[32mO terremoto[m
+[32m+[m[32mMirante[m
+[32m+[m[32mMulan[m
+[32m+[m[32mHonest Thief[m
+[32m+[m[32m45 Do Segundo Tempo[m
+[32m+[m[32mOs Novos Mutantes[m
+[32m+[m[32mBoca de Ouro[m
+[32m+[m[32m007  Sem Tempo Para Morrer[m
+[32m+[m[32mIlha da Fantasia[m
+[32m+[m[32mTrolls 2[m
+[32m+[m[32mO Jardim Secreto[m
+[32m+[m[32mDepois A Louca Sou Eu[m
+[32m+[m[32mEmma[m
+[32m+[m[32mVeneza[m
+[32m+[m[32mEduardo e Mônica[m
+[32m+[m[32mO Amor Dá Voltas[m
+[32m+[m[32mPedro Coelho 2: O Fugitivo[m
+[32m+[m[32mViúva Negra[m
+[32m+[m[32mNão Vamos Pagar Nada[m
+[32m+[m[32mScooby!  O Filme[m
+[32m+[m[32mO Segredo[m
+[32m+[m[32mA Mulher na Janela[m
+[32m+[m[32mVelozes & Furiosos 9[m
+[32m+[m[32mUma Cilada Para Meu Avô[m
+[32m+[m[32mArtemis Fowl: O Mundo Secreto[m
+[32m+[m[32mMulherMaravilha 1984[m
+[32m+[m[32mSilvio Santos  O Sequestro[m
+[32m+[m[32mBob Esponja: O Incrível Resgate[m
+[32m+[m[32mBoss Level[m
+[32m+[m[32mPredestinado[m
+[32m+[m[32mSoul[m
+[32m+[m[32mTop Gun: Maverick[m
+[32m+[m[32mFree Guy  Assumindo o Controle[m
+[32m+[m[32mJungle Cruise[m
+[32m+[m[32mTenet[m
+[32m+[m
+[32m+[m
+[1mdiff --git a/src/br/com/locadora/filmes/Catalogo.java b/src/br/com/locadora/filmes/Catalogo.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..3ebe540[m
+[1m--- /dev/null[m
+[1m+++ b/src/br/com/locadora/filmes/Catalogo.java[m
+[36m@@ -0,0 +1,41 @@[m
+[32m+[m[32mpackage br.com.locadora.filmes;[m
+[32m+[m
+[32m+[m[32mimport java.io.File;[m
+[32m+[m[32mimport java.io.FileNotFoundException;[m
+[32m+[m[32mimport java.util.ArrayList;[m
+[32m+[m[32mimport java.util.List;[m
+[32m+[m[32mimport java.util.Scanner;[m
+[32m+[m
+[32m+[m[32mpublic class Catalogo {[m
+[32m+[m	[32mprivate List<String> filmes = new ArrayList<>();[m
+[32m+[m[41m	[m
+[32m+[m	[32mpublic List<String> getFilmes() throws FileNotFoundException {[m
+[32m+[m		[32mScanner scan = new Scanner(new File("filmes.txt"));[m
+[32m+[m		[32mwhile(scan.hasNextLine()) {[m
+[32m+[m			[32mString linha = scan.nextLine();[m
+[32m+[m			[32mfilmes.add(linha);[m
+[32m+[m		[32m}[m
+[32m+[m			[32mreturn filmes;[m
+[32m+[m	[32m}[m
+[32m+[m[41m	[m
+[32m+[m	[32mpublic void removerFilme(String nome) {[m
+[32m+[m		[32mfilmes.remove(nome);[m
+[32m+[m	[32m}[m
+[32m+[m[41m	[m
+[32m+[m[41m	[m
+[32m+[m[32m}[m
+[32m+[m[41m		[m
+[32m+[m[41m			[m
+[32m+[m[41m			[m
+[32m+[m[41m		[m
+[32m+[m[41m	[m
+[32m+[m[41m	[m
+[32m+[m
+[32m+[m[41m	[m
+[32m+[m[41m	[m
+[32m+[m[41m		[m
+[32m+[m[41m	[m
+[32m+[m[41m	[m
+[32m+[m[41m		[m
+[32m+[m[41m	[m
+[32m+[m
+[1mdiff --git a/src/br/com/locadora/filmes/TestaFilme.java b/src/br/com/locadora/filmes/TestaFilme.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..7b6e3ec[m
+[1m--- /dev/null[m
+[1m+++ b/src/br/com/locadora/filmes/TestaFilme.java[m
+[36m@@ -0,0 +1,31 @@[m
+[32m+[m[32mpackage br.com.locadora.filmes;[m
+[32m+[m
+[32m+[m
+[32m+[m[32mimport java.io.FileNotFoundException;[m
+[32m+[m[32mimport java.util.Scanner;[m
+[32m+[m
+[32m+[m[32mimport com.sun.source.tree.NewClassTree;[m
+[32m+[m
+[32m+[m[32mimport br.com.locadora.filmes.locadora.AlugarFilme;[m
+[32m+[m[32mimport br.com.locadora.filmes.locadora.DevolverFilme;[m
+[32m+[m
+[32m+[m
+[32m+[m[32mpublic class TestaFilme {[m
+[32m+[m	[32mpublic static void main(String[] args) throws FileNotFoundException  {[m
+[32m+[m[41m		[m
+[32m+[m		[32mCatalogo cat = new Catalogo();[m
+[32m+[m		[32mAlugarFilme al = new AlugarFilme();[m
+[32m+[m		[32mDevolverFilme dev = new DevolverFilme();[m
+[32m+[m[41m	[m
+[32m+[m		[32mal.alugarFilme();[m
+[32m+[m[41m		[m
+[32m+[m		[32mSystem.out.println(al.getFilmesalugados());[m
+[32m+[m[41m		[m
+[32m+[m		[32mdev.devolverFilme();[m
+[32m+[m		[32mSystem.out.println(cat.getFilmes());[m
+[32m+[m		[32mal.removerFilme("Superintelligence");[m
+[32m+[m[41m		[m
+[32m+[m		[32mSystem.out.println(cat.getFilmes());[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m}[m
+[1mdiff --git a/src/br/com/locadora/filmes/locadora/AlugarFilme.java b/src/br/com/locadora/filmes/locadora/AlugarFilme.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..175bba6[m
+[1m--- /dev/null[m
+[1m+++ b/src/br/com/locadora/filmes/locadora/AlugarFilme.java[m
+[36m@@ -0,0 +1,55 @@[m
+[32m+[m[32mpackage br.com.locadora.filmes.locadora;[m
+[32m+[m
+[32m+[m[32mimport java.io.FileNotFoundException;[m
+[32m+[m[32mimport java.util.ArrayList;[m
+[32m+[m[32mimport java.util.List;[m
+[32m+[m[32mimport java.util.Scanner;[m
+[32m+[m
+[32m+[m[32mimport br.com.locadora.filmes.Catalogo;[m
+[32m+[m
+[32m+[m[32mpublic class AlugarFilme extends Catalogo {[m
+[32m+[m	[32mList<String> filmesalugados = new ArrayList<>();[m
+[32m+[m[41m	[m
+[32m+[m	[32mpublic void alugarFilme() throws FileNotFoundException {[m
+[32m+[m		[32mScanner scan = new Scanner(System.in);[m
+[32m+[m		[32mSystem.out.println("Qual filme deseja alugar? ");[m
+[32m+[m		[32mString resposta = scan.nextLine(); // como faz para ignorar as letras maiusculas e minusculas?[m
+[32m+[m[41m		[m
+[32m+[m		[32mif (getFilmes().contains(resposta)) {[m
+[32m+[m			[32mSystem.out.println("Confirmar aluguel do filme " + resposta + " S/N");[m
+[32m+[m			[32mString resp2 = scan.next();[m
+[32m+[m			[32mif (resp2.equalsIgnoreCase("S") || resp2.equalsIgnoreCase("sim")) {[m
+[32m+[m				[32mSystem.out.println("Filme " + resposta + " Alugado com sucesso!");[m
+[32m+[m				[32mremoverFilme(resposta);[m
+[32m+[m				[32mfilmesalugados.add(resposta);[m
+[32m+[m				[32mencerrar();//aparece 2 vezes[m
+[32m+[m			[32m}[m
+[32m+[m		[32m} else[m[41m [m
+[32m+[m			[32mSystem.out.println("O filme " + resposta + " não consta no catalogo\n");[m
+[32m+[m			[32mencerrar();[m
+[32m+[m[41m			[m
+[32m+[m		[32m}[m
+[32m+[m[41m		[m
+[32m+[m[41m		[m
+[32m+[m[41m	[m
+[32m+[m[41m		[m
+[32m+[m	[32mpublic List<String> getFilmesalugados() {[m
+[32m+[m		[32mreturn filmesalugados;[m
+[32m+[m	[32m}[m
+[32m+[m[41m	[m
+[32m+[m	[32mpublic void encerrar() throws FileNotFoundException  {[m
+[32m+[m		[32mScanner scan = new Scanner(System.in);[m
+[32m+[m		[32mSystem.out.println("Encerrar? S/N");[m
+[32m+[m		[32mString resp = scan.next();[m
+[32m+[m[41m		[m
+[32m+[m		[32mif(resp.equalsIgnoreCase("n")|| resp.equalsIgnoreCase("nao")) {[m
+[32m+[m			[32malugarFilme();[m
+[32m+[m[41m		[m
+[32m+[m		[32m}else if (resp.equalsIgnoreCase("s") || resp.equalsIgnoreCase("sim")) {[m
+[32m+[m			[32mSystem.out.println("Programa encerrado!");[m
+[32m+[m		[32m}[m[41m [m
+[32m+[m	[32m}[m
+[32m+[m[41m		[m
+[32m+[m[41m		[m
+[32m+[m
+[32m+[m[32m}[m[41m	[m
+[1mdiff --git a/src/br/com/locadora/filmes/locadora/DevolverFilme.java b/src/br/com/locadora/filmes/locadora/DevolverFilme.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..fbd4a83[m
+[1m--- /dev/null[m
+[1m+++ b/src/br/com/locadora/filmes/locadora/DevolverFilme.java[m
+[36m@@ -0,0 +1,22 @@[m
+[32m+[m[32mpackage br.com.locadora.filmes.locadora;[m
+[32m+[m
+[32m+[m[32mimport java.util.Scanner;[m
+[32m+[m
+[32m+[m[32mpublic class DevolverFilme extends AlugarFilme{[m
+[32m+[m[41m	[m
+[32m+[m	[32mScanner scan = new Scanner(System.in);[m
+[32m+[m[41m	[m
+[32m+[m	[32mpublic void devolverFilme() {[m
+[32m+[m		[32mSystem.out.println("Qual filme deseja devolver? ");[m
+[32m+[m		[32mString resposta = scan.nextLine();[m
+[32m+[m[41m		[m
+[32m+[m		[32mif (getFilmesalugados().contains(resposta)) {// nao localiza na lista[m
+[32m+[m			[32mSystem.out.println("Confirmar devolução do filme " + resposta + "S/N");[m
+[32m+[m			[32mif (resposta.equalsIgnoreCase("s") || resposta.equalsIgnoreCase("sim")) {[m
+[32m+[m				[32mSystem.out.println("Filme " + resposta + " devolvido com sucesso");[m
+[32m+[m				[32mfilmesalugados.remove(resposta);[m
+[32m+[m			[32m}[m[41m [m
+[32m+[m		[32m}else[m
+[32m+[m			[32mSystem.out.println("Nao tem");[m
+[32m+[m	[32m}[m
+[32m+[m[32m}[m

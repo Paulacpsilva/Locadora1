@@ -5,9 +5,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import br.com.locadora.filmes.Catalogo;
+import br.com.locadora.filmes.Catalogo2;
 
-public class AlugarFilme extends Catalogo {
+public class AlugarFilme2 extends Catalogo2 {
 	List<String> filmesalugados = new ArrayList<>();
 	
 	public void alugarFilme() throws FileNotFoundException {
@@ -15,23 +15,21 @@ public class AlugarFilme extends Catalogo {
 		System.out.println("Qual filme deseja alugar? ");
 		String resposta = scan.nextLine(); // como faz para ignorar as letras maiusculas e minusculas?
 		
-		if (getFilmes().contains(resposta)) {
+		if (getFilmes2().contains(resposta)) {
 			System.out.println("Confirmar aluguel do filme " + resposta + " S/N");
 			String resp2 = scan.next();
 			if (resp2.equalsIgnoreCase("S") || resp2.equalsIgnoreCase("sim")) {
 				System.out.println("Filme " + resposta + " Alugado com sucesso!");
-				removerFilme(resposta);
+				getFilmes2().remove(resposta);
+				delet(resposta);
 				filmesalugados.add(resposta);
-				encerrar();//aparece 2 vezes
 			}
+			encerrar();
 		} else 
 			System.out.println("O filme " + resposta + " não consta no catalogo\n");
-			encerrar();
-			
+			// encerrar(); porque chega aqui se o contem o filme na lista ?
+			//System.out.println("saida errada");
 		}
-		
-		
-	
 		
 	public List<String> getFilmesalugados() {
 		return filmesalugados;
@@ -47,9 +45,15 @@ public class AlugarFilme extends Catalogo {
 		
 		}else if (resp.equalsIgnoreCase("s") || resp.equalsIgnoreCase("sim")) {
 			System.out.println("Programa encerrado!");
+			System.out.println("Filmes alugados: "+ getFilmesalugados());
 		} 
 	}
-		
+	
+	public void delet(String resposta) {// nao funciona
+		getFilmes2().remove(resposta);
+	}
+	
+	
 		
 
 }	
