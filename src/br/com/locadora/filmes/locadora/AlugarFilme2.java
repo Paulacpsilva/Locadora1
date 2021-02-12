@@ -19,7 +19,7 @@ public class AlugarFilme2 extends Catalogo2 {
 			System.out.println("Confirmar aluguel do filme " + resposta + " S/N");
 			String resp2 = scan.next();
 			if (resp2.equalsIgnoreCase("S") || resp2.equalsIgnoreCase("sim")) {
-				System.out.println("Filme " + resposta + " Alugado com sucesso!");
+				System.out.println("Filme " + resposta + " alugado com sucesso!");
 				getFilmes2().remove(resposta);
 				delet(resposta);
 				filmesalugados.add(resposta);
