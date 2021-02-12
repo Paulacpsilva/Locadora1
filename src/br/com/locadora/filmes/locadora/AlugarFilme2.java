@@ -37,7 +37,7 @@ public class AlugarFilme2 extends Catalogo2 {
 	
 	public void encerrar() throws FileNotFoundException  {
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Encerrar? S/N");
+		System.out.println("Encerrar? S/N ");
 		String resp = scan.next();
 		
 		if(resp.equalsIgnoreCase("n")|| resp.equalsIgnoreCase("nao")) {
