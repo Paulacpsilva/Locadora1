@@ -1,22 +1,24 @@
 package br.com.locadora.filmes.locadora;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
-public class DevolverFilme extends AlugarFilme2{
+import br.com.locadora.filmes.Catalogo2;
+
+public class DevolverFilme extends Catalogo2{
+	List<String> filmesalugados = new ArrayList<>();
 	
-	Scanner scan = new Scanner(System.in);
+	public List<String> getFilmesalugados() {
+		return filmesalugados;
+	}
 	
 	public void devolverFilme() {
+		Scanner scan = new Scanner(System.in);
 		System.out.println("Qual filme deseja devolver? ");
-		String resposta = scan.nextLine();
+		String resposta = scan.nextLine().toLowerCase();
+		System.out.println(getFilmesalugados().contains(resposta));
 		
-		if (getFilmesalugados().contains(resposta)) {// nao funciona - a lista e atualizada/ zerada toda vez q inicia o programa entao nao salva 
-			System.out.println("Confirmar devolução do filme " + resposta + "S/N");
-			if (resposta.equalsIgnoreCase("s") || resposta.equalsIgnoreCase("sim")) {
-				System.out.println("Filme " + resposta + " devolvido com sucesso");
-				filmesalugados.remove(resposta);
-			} 
-		}else
-			System.out.println("Nao tem");
+		
 	}
 }

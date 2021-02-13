@@ -16,13 +16,15 @@ public class TestaFilme extends DevolverFilme{
 		DevolverFilme dev = new DevolverFilme();
 		
 		Scanner scan  = new Scanner(System.in);
+		int locadora =0;
 		
-		
+		while(locadora !=3) {
+			
 		System.out.println("----------Locadora de filmes--------------");
 		System.out.println("[1] Alugar filme");
 		System.out.println("[2] Devolver filme");
 		System.out.println("[3] Sair");
-		int locadora = scan.nextInt();
+		locadora = scan.nextInt();
 		
 		switch (locadora) {
 		case 1:
@@ -38,7 +40,8 @@ public class TestaFilme extends DevolverFilme{
 			//o q fazer?
 			break;
 		}
-		
+		System.out.println(dev.getFilmesalugados());
+	}	
 }
 
 }

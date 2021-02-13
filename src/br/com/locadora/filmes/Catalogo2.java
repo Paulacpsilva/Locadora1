@@ -12,7 +12,7 @@ public class Catalogo2 {
 	public List<String> getFilmes2() {
 		try {
 			for (String line : Files.readAllLines(Paths.get("filmes.txt"))) {
-				filmes2.add(line);
+				filmes2.add(line.toLowerCase());
 			}
 		} catch (IOException e) {
 			System.out.println("erro ao ler o arquivo texto...."+e.getLocalizedMessage());
